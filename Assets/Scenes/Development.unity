@@ -1248,31 +1248,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1567830437 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 664800865509213273, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-    type: 3}
-  m_PrefabInstance: {fileID: 664800864627570172}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1567830442
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567830437}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8e135f09e6c448b438d1799d6510e59a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1786459507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1319,62 +1294,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1865340984 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 664800865211739588, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-    type: 3}
-  m_PrefabInstance: {fileID: 664800864627570172}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1865340989
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865340984}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8e135f09e6c448b438d1799d6510e59a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!224 &1876203989 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5976556064949472423, guid: 012ad6d748d1ca949b07aa09baef1caa,
     type: 3}
   m_PrefabInstance: {fileID: 5976556063083828594}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1894180888 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 664800864897687012, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-    type: 3}
-  m_PrefabInstance: {fileID: 664800864627570172}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1894180893
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894180888}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8e135f09e6c448b438d1799d6510e59a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &664800864627570172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1385,7 +1310,7 @@ PrefabInstance:
     - target: {fileID: 664800864518438589, guid: 04eb6f6d79267c14da7bff3e6315fedf,
         type: 3}
       propertyPath: m_Name
-      value: ButtonsBottom
+      value: ButtonContainerPrimary
       objectReference: {fileID: 0}
     - target: {fileID: 664800864518438590, guid: 04eb6f6d79267c14da7bff3e6315fedf,
         type: 3}
@@ -1491,71 +1416,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800864897687014, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Transition
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800864897687015, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800864897687015, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800864897687015, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800865211739590, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Transition
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800865211739591, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800865211739591, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800865211739591, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800865509213268, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.73333335
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800865509213268, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.73333335
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800865509213268, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.73333335
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800865509213275, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_Transition
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 664800865509213275, guid: 04eb6f6d79267c14da7bff3e6315fedf,
-        type: 3}
-      propertyPath: m_AnimationTriggers.m_SelectedTrigger
-      value: Selected
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04eb6f6d79267c14da7bff3e6315fedf, type: 3}
