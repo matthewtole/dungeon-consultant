@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: WorldFloor
+    uniqueID: 4054761237
+    locked: 0
+  - name: DungeonFloor
+    uniqueID: 876212915
+    locked: 0
+  - name: DungeonWalls
+    uniqueID: 823608901
+    locked: 0
+  - name: DungeonObjects
+    uniqueID: 1921773545
+    locked: 0
