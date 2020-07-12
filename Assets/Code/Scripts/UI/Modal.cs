@@ -1,22 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
-public class Modal : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
+namespace DungeonManager {
+    public class Modal : MonoBehaviour {
         
-    }
+        public UnityEvent OnClose;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        public void Close() {
+            Destroy(gameObject, 0.1f);
+            OnClose.Invoke();
+        }
 
-    public void Close() {
-        Destroy(gameObject, 0.1f);
+        public void OnDrag(BaseEventData data) {
+            PointerEventData eventData = (PointerEventData)data;
+            transform.position += new Vector3(eventData.delta.x, eventData.delta.y, 0);
+        }
     }
 }
