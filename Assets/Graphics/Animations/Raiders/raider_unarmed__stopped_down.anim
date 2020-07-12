@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: adventurer_basic_unarmed__stopped_down
+  m_Name: raider_unarmed__stopped_down
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 8187349472185356636, guid: e9c59899cccc21f45aef682898d3c9ab,
+      value: {fileID: -2516922397838659907, guid: e9c59899cccc21f45aef682898d3c9ab,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -41,7 +41,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 8187349472185356636, guid: e9c59899cccc21f45aef682898d3c9ab, type: 3}
+    - {fileID: -2516922397838659907, guid: e9c59899cccc21f45aef682898d3c9ab, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

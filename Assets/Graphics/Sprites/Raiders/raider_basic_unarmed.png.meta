@@ -92,6 +92,96 @@ TextureImporter:
   - first:
       213: -142636054419900507
     second: adventurer_basic_unarmed_29
+  - first:
+      213: -6138260637448687065
+    second: raider_basic_unarmed_0
+  - first:
+      213: 2267149988339187008
+    second: raider_basic_unarmed_1
+  - first:
+      213: 6119563379764577827
+    second: raider_basic_unarmed_2
+  - first:
+      213: -397581728560112636
+    second: raider_basic_unarmed_3
+  - first:
+      213: 7453917350471978586
+    second: raider_basic_unarmed_4
+  - first:
+      213: -4125454960502758424
+    second: raider_basic_unarmed_5
+  - first:
+      213: 8648346375278233382
+    second: raider_basic_unarmed_6
+  - first:
+      213: -3712264910537912305
+    second: raider_basic_unarmed_7
+  - first:
+      213: -774689319533596875
+    second: raider_basic_unarmed_8
+  - first:
+      213: 2600864287400041903
+    second: raider_basic_unarmed_9
+  - first:
+      213: 5398064639125401515
+    second: raider_basic_unarmed_10
+  - first:
+      213: -1442886652839136430
+    second: raider_basic_unarmed_11
+  - first:
+      213: -7934202249127978424
+    second: raider_basic_unarmed_12
+  - first:
+      213: 828143509549085472
+    second: raider_basic_unarmed_13
+  - first:
+      213: 1428212635966080607
+    second: raider_basic_unarmed_14
+  - first:
+      213: -2127856510899919602
+    second: raider_basic_unarmed_15
+  - first:
+      213: 2308381262209096018
+    second: raider_basic_unarmed_16
+  - first:
+      213: 636199228136993561
+    second: raider_basic_unarmed_17
+  - first:
+      213: -2516922397838659907
+    second: raider_basic_unarmed_18
+  - first:
+      213: 2599911727357153730
+    second: raider_basic_unarmed_19
+  - first:
+      213: 3421317866933386651
+    second: raider_basic_unarmed_20
+  - first:
+      213: -350222036508089604
+    second: raider_basic_unarmed_21
+  - first:
+      213: 5543176453007415179
+    second: raider_basic_unarmed_22
+  - first:
+      213: 7725617494596668310
+    second: raider_basic_unarmed_23
+  - first:
+      213: -7149358958848603250
+    second: raider_basic_unarmed_24
+  - first:
+      213: 8623836223290822597
+    second: raider_basic_unarmed_25
+  - first:
+      213: -4213951630887153798
+    second: raider_basic_unarmed_26
+  - first:
+      213: 5582021955666814692
+    second: raider_basic_unarmed_27
+  - first:
+      213: 9071859928936712505
+    second: raider_basic_unarmed_28
+  - first:
+      213: -3179207810858695784
+    second: raider_basic_unarmed_29
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -177,7 +267,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_0
+      name: raider_basic_unarmed_0
       rect:
         serializedVersion: 2
         x: 0
@@ -191,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d7d674737e9c3870800000000000000
-      internalID: 8663974001866364887
+      spriteID: 722bb1ed87480daa0800000000000000
+      internalID: -6138260637448687065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_1
+      name: raider_basic_unarmed_1
       rect:
         serializedVersion: 2
         x: 48
@@ -212,14 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d043a78a6a73b8fb0800000000000000
-      internalID: -4644557401771854835
+      spriteID: 04dfc7b07e8867f10800000000000000
+      internalID: 2267149988339187008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_2
+      name: raider_basic_unarmed_2
       rect:
         serializedVersion: 2
         x: 96
@@ -233,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f3e8de073160bb20800000000000000
-      internalID: 3148123028632167410
+      spriteID: 3264b57987e0de450800000000000000
+      internalID: 6119563379764577827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_3
+      name: raider_basic_unarmed_3
       rect:
         serializedVersion: 2
         x: 0
@@ -254,14 +344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88776be3f75cde900800000000000000
-      internalID: 715445066125440904
+      spriteID: 40c1dfb36818b7af0800000000000000
+      internalID: -397581728560112636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_4
+      name: raider_basic_unarmed_4
       rect:
         serializedVersion: 2
         x: 48
@@ -275,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6654ee456596d8640800000000000000
-      internalID: 5083835373884163430
+      spriteID: a5ec0047652a17760800000000000000
+      internalID: 7453917350471978586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_5
+      name: raider_basic_unarmed_5
       rect:
         serializedVersion: 2
         x: 96
@@ -296,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c27f911ca36a97c0800000000000000
-      internalID: -4063826123067264319
+      spriteID: 8e32c5e22907fb6c0800000000000000
+      internalID: -4125454960502758424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_6
+      name: raider_basic_unarmed_6
       rect:
         serializedVersion: 2
         x: 0
@@ -317,14 +407,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4ab3e2d5386cf540800000000000000
-      internalID: 5043020263128808010
+      spriteID: 6270ff81539150870800000000000000
+      internalID: 8648346375278233382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_7
+      name: raider_basic_unarmed_7
       rect:
         serializedVersion: 2
         x: 48
@@ -338,14 +428,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0e5f922afc043690800000000000000
-      internalID: -7623454000769180149
+      spriteID: f009d377bb26b7cc0800000000000000
+      internalID: -3712264910537912305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_8
+      name: raider_basic_unarmed_8
       rect:
         serializedVersion: 2
         x: 96
@@ -359,14 +449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b169c12c9828ec5c0800000000000000
-      internalID: -4193270674856569317
+      spriteID: 53f29e91b20cf35f0800000000000000
+      internalID: -774689319533596875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_9
+      name: raider_basic_unarmed_9
       rect:
         serializedVersion: 2
         x: 144
@@ -380,14 +470,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 731652b82621e4cc0800000000000000
-      internalID: -3725019627338243785
+      spriteID: fad9a771a40281420800000000000000
+      internalID: 2600864287400041903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_10
+      name: raider_basic_unarmed_10
       rect:
         serializedVersion: 2
         x: 0
@@ -401,14 +491,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8d1568ef8213cbe0800000000000000
-      internalID: -1458301445049344629
+      spriteID: bafaaa96037c9ea40800000000000000
+      internalID: 5398064639125401515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_11
+      name: raider_basic_unarmed_11
       rect:
         serializedVersion: 2
         x: 48
@@ -422,14 +512,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d661f714e761fb0800000000000000
-      internalID: -4677412343207531224
+      spriteID: 253fe56eb36d9fbe0800000000000000
+      internalID: -1442886652839136430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_12
+      name: raider_basic_unarmed_12
       rect:
         serializedVersion: 2
         x: 96
@@ -443,14 +533,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31b24823ca7122020800000000000000
-      internalID: 2315439186771192595
+      spriteID: 84a1f94771d04e190800000000000000
+      internalID: -7934202249127978424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_13
+      name: raider_basic_unarmed_13
       rect:
         serializedVersion: 2
         x: 144
@@ -464,14 +554,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8ef1daf7376c7b30800000000000000
-      internalID: 4286414435478797967
+      spriteID: 023f7bd52282e7b00800000000000000
+      internalID: 828143509549085472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_14
+      name: raider_basic_unarmed_14
       rect:
         serializedVersion: 2
         x: 0
@@ -485,14 +575,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3c1d70894b2175b0800000000000000
-      internalID: -5372465285788001217
+      spriteID: f568b7e43d702d310800000000000000
+      internalID: 1428212635966080607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_15
+      name: raider_basic_unarmed_15
       rect:
         serializedVersion: 2
         x: 48
@@ -506,14 +596,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce8052adffa06a670800000000000000
-      internalID: 8549533036602263788
+      spriteID: e05eec6f6c55872e0800000000000000
+      internalID: -2127856510899919602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_16
+      name: raider_basic_unarmed_16
       rect:
         serializedVersion: 2
         x: 96
@@ -527,14 +617,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07589600360ad99b0800000000000000
-      internalID: -5071721258280188560
+      spriteID: 25914241784090020800000000000000
+      internalID: 2308381262209096018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_17
+      name: raider_basic_unarmed_17
       rect:
         serializedVersion: 2
         x: 144
@@ -548,14 +638,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e01204453e979dda0800000000000000
-      internalID: -5919566217923780338
+      spriteID: 913bb77c3db34d800800000000000000
+      internalID: 636199228136993561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_18
+      name: raider_basic_unarmed_18
       rect:
         serializedVersion: 2
         x: 0
@@ -569,14 +659,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c51179d67fe4f9170800000000000000
-      internalID: 8187349472185356636
+      spriteID: dbe2a951a68121dd0800000000000000
+      internalID: -2516922397838659907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_19
+      name: raider_basic_unarmed_19
       rect:
         serializedVersion: 2
         x: 48
@@ -590,14 +680,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 243140bde56f7f2d0800000000000000
-      internalID: -3244854119235316926
+      spriteID: 2c1de7ce0fdb41420800000000000000
+      internalID: 2599911727357153730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_20
+      name: raider_basic_unarmed_20
       rect:
         serializedVersion: 2
         x: 96
@@ -611,14 +701,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5be47928f58ed3400800000000000000
-      internalID: 305655846641553077
+      spriteID: b9df24a1976fa7f20800000000000000
+      internalID: 3421317866933386651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_21
+      name: raider_basic_unarmed_21
       rect:
         serializedVersion: 2
         x: 0
@@ -632,14 +722,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8b084946a96255d0800000000000000
-      internalID: -3075279432625681523
+      spriteID: cf2eb61d9e2c32bf0800000000000000
+      internalID: -350222036508089604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_22
+      name: raider_basic_unarmed_22
       rect:
         serializedVersion: 2
         x: 48
@@ -653,14 +743,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 697668526d38ba620800000000000000
-      internalID: 2786465750234589078
+      spriteID: b8711d07d915dec40800000000000000
+      internalID: 5543176453007415179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_23
+      name: raider_basic_unarmed_23
       rect:
         serializedVersion: 2
         x: 96
@@ -674,14 +764,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83b0301d59b1695f0800000000000000
-      internalID: -750381957639894216
+      spriteID: 69b4af3ed28e63b60800000000000000
+      internalID: 7725617494596668310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_24
+      name: raider_basic_unarmed_24
       rect:
         serializedVersion: 2
         x: 0
@@ -695,14 +785,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fb9668d5860d8e30800000000000000
-      internalID: 4507265973998754809
+      spriteID: e8b8216e7ef58cc90800000000000000
+      internalID: -7149358958848603250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_25
+      name: raider_basic_unarmed_25
       rect:
         serializedVersion: 2
         x: 48
@@ -716,14 +806,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0915611d6ff9262c0800000000000000
-      internalID: -4439810400215215728
+      spriteID: 5cf4562aa550ea770800000000000000
+      internalID: 8623836223290822597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_26
+      name: raider_basic_unarmed_26
       rect:
         serializedVersion: 2
         x: 96
@@ -737,14 +827,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 192b238e744253100800000000000000
-      internalID: 87015659060507281
+      spriteID: a7f0b4471590585c0800000000000000
+      internalID: -4213951630887153798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_27
+      name: raider_basic_unarmed_27
       rect:
         serializedVersion: 2
         x: 0
@@ -758,14 +848,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c87c3b0110fad3f90800000000000000
-      internalID: -6972224228989614196
+      spriteID: 4e6a3f3d463577d40800000000000000
+      internalID: 5582021955666814692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_28
+      name: raider_basic_unarmed_28
       rect:
         serializedVersion: 2
         x: 48
@@ -779,14 +869,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bd17a8d43ba6be20800000000000000
-      internalID: 3366066014967504307
+      spriteID: 9398f546a88b5ed70800000000000000
+      internalID: 9071859928936712505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: adventurer_basic_unarmed_29
+      name: raider_basic_unarmed_29
       rect:
         serializedVersion: 2
         x: 96
@@ -800,8 +890,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a77324a341450ef0800000000000000
-      internalID: -142636054419900507
+      spriteID: 893ce96175f21e3d0800000000000000
+      internalID: -3179207810858695784
       vertices: []
       indices: 
       edges: []

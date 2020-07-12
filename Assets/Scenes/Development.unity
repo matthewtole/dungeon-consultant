@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -19257,6 +19257,17 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 512
       objectReference: {fileID: 0}
+    - target: {fileID: 4708352099689160688, guid: bcf32a4aaf9453749b9ee72e402c4142,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2516922397838659907, guid: e9c59899cccc21f45aef682898d3c9ab,
+        type: 3}
+    - target: {fileID: 4708352099689160688, guid: bcf32a4aaf9453749b9ee72e402c4142,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4708352099689160690, guid: bcf32a4aaf9453749b9ee72e402c4142,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19325,7 +19336,7 @@ PrefabInstance:
     - target: {fileID: 4708352099887841166, guid: bcf32a4aaf9453749b9ee72e402c4142,
         type: 3}
       propertyPath: m_Name
-      value: AdventurerUnarmed
+      value: RaiderUnarmed
       objectReference: {fileID: 0}
     - target: {fileID: 4708352099887841166, guid: bcf32a4aaf9453749b9ee72e402c4142,
         type: 3}
