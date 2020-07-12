@@ -132,7 +132,8 @@ GameObject:
   - component: {fileID: 239386522}
   - component: {fileID: 239386524}
   - component: {fileID: 239386523}
-  m_Layer: 0
+  - component: {fileID: 239386525}
+  m_Layer: 9
   m_Name: DungeonWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,6 +623,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &239386525
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239386521}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &308900078
 GameObject:
   m_ObjectHideFlags: 0
@@ -19236,6 +19253,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 269031819, guid: bcf32a4aaf9453749b9ee72e402c4142, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 4708352099689160690, guid: bcf32a4aaf9453749b9ee72e402c4142,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19305,6 +19326,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AdventurerUnarmed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708352099887841166, guid: bcf32a4aaf9453749b9ee72e402c4142,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcf32a4aaf9453749b9ee72e402c4142, type: 3}
