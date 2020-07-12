@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4708352099689160688}
   - component: {fileID: 4708352099689160689}
   - component: {fileID: 4708352099689160703}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: RaiderUnarmedGfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4708352099689160691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4708352099887841165}
@@ -69,10 +69,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1921773545
-  m_SortingLayer: 4
+  m_SortingLayerID: 1146205513
+  m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8187349472185356636, guid: e9c59899cccc21f45aef682898d3c9ab,
+  m_Sprite: {fileID: -2516922397838659907, guid: e9c59899cccc21f45aef682898d3c9ab,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 4708352099887841165}
   - component: {fileID: 269031818}
   - component: {fileID: 269031819}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: RaiderUnarmed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,4 +224,4 @@ MonoBehaviour:
   movement: {fileID: 269031818}
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512

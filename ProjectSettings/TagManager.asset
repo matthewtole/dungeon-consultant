@@ -17,7 +17,7 @@ TagManager:
   - Wall
   - Object
   - Minion
-  - Adventurer
+  - Raider
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: DungeonObjects
     uniqueID: 1921773545
+    locked: 0
+  - name: Characters
+    uniqueID: 1146205513
     locked: 0
