@@ -6,6 +6,8 @@ namespace DungeonManager {
     public class CharacterAnimation : MonoBehaviour {
         [SerializeField]
         protected Animator animator;
+        [SerializeField]
+        protected CharacterMovement movement;
 
         [SerializeField]
         protected string horizontalFloat = "Horizontal";
@@ -35,6 +37,17 @@ namespace DungeonManager {
             if (idleTimer > 0 && Time.time >= idleTimer) {
                 Idle();
             }
+        }
+
+        public void HandleVelocityChange() {
+            IdleOff();
+            animator.SetFloat(velocityFloat, movement.Velocity);
+        }
+
+        public void HandleDirectionChange() {
+            IdleOff();
+            animator.SetFloat(horizontalFloat, movement.Direction.x);
+            animator.SetFloat(verticalFloat, movement.Direction.y);
         }
 
         public void FaceDirection(Vector3 position) {
