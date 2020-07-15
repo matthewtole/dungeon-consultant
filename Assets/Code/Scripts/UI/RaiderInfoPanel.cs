@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class RaiderInfoPanel : MonoBehaviour
@@ -19,6 +16,7 @@ public class RaiderInfoPanel : MonoBehaviour
     void Start() {
         textName.text = raider.characterName;
         followCamera = Instantiate(followCameraPrefab, raider.gameObject.transform);
+        followCamera.transform.position += new Vector3(0, 0.3f, 0);
     }
 
     // Update is called once per frame

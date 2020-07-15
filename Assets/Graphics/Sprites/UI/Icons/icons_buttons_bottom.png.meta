@@ -11,6 +11,18 @@ TextureImporter:
   - first:
       213: -4352968742519703640
     second: icons_buttons_bottom_2
+  - first:
+      213: -9011755002626832498
+    second: icons_buttons_bottom_0
+  - first:
+      213: 3411480600872405319
+    second: icons_buttons_bottom_1
+  - first:
+      213: 204049204213133219
+    second: icons_buttons_bottom_2
+  - first:
+      213: -7691149059683821191
+    second: icons_buttons_bottom_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -110,8 +122,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3727308209d2cfb0800000000000000
-      internalID: -4628898862219188420
+      spriteID: e8704994290dfe280800000000000000
+      internalID: -9011755002626832498
       vertices: []
       indices: 
       edges: []
@@ -131,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e73fec233e8af9470800000000000000
-      internalID: 8403621123460100990
+      spriteID: 749c22d1883085f20800000000000000
+      internalID: 3411480600872405319
       vertices: []
       indices: 
       edges: []
@@ -152,8 +164,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a7fbbfddf52793c0800000000000000
-      internalID: -4352968742519703640
+      spriteID: 3af23dd8bade4d200800000000000000
+      internalID: 204049204213133219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_buttons_bottom_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97957fefdac834590800000000000000
+      internalID: -7691149059683821191
       vertices: []
       indices: 
       edges: []

@@ -12,7 +12,7 @@ namespace DungeonManager {
         static Vector3[] DIRECTIONS = { Vector3.left, Vector3.up, Vector3.down, Vector3.right };
 
         void Start() {
-            Invoke("DoRandomMovement", 1);
+            DoRandomMovement();
         }
 
         protected void DoRandomMovement() {
@@ -26,7 +26,7 @@ namespace DungeonManager {
 
         public void HandleVelocityChange() {
             if (movement.Velocity == 0) {
-                Invoke("DoRandomMovement", 1);
+                DoRandomMovement();
             }
         }
     }

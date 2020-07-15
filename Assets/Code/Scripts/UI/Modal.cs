@@ -10,7 +10,7 @@ namespace DungeonManager {
         public UnityEvent OnClose;
 
         public void Close() {
-            Destroy(gameObject, 0.1f);
+            Destroy(gameObject);
             OnClose.Invoke();
         }
 
