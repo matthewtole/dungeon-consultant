@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be78fb63e7c8c9e49966685a9b7e1771, type: 3}
+  m_Name: Spikes
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7989229572189850787, guid: b177e1caaba9db54d90b7c51a09ce4e9, type: 3}
+  cost: 50
+  shopImage: {fileID: -7836376798481834204, guid: 18551caef1ccfff4aa16261508ac3700,
+    type: 3}
+  buildLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  label: Floor Spikes
