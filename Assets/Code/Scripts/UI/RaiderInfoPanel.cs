@@ -1,31 +1,39 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class RaiderInfoPanel : MonoBehaviour
-{
-    [SerializeField]
-    public Raider raider;
-    
-    [SerializeField]
-    protected TextMeshProUGUI textName;
-    [SerializeField]
-    protected Camera followCameraPrefab;
+namespace DungeonManager {
+    public class RaiderInfoPanel : MonoBehaviour {
+        [SerializeField]
+        public Raider raider;
 
-    protected Camera followCamera;
+        [SerializeField]
+        protected TextMeshProUGUI textName;
+        [SerializeField]
+        protected Camera followCameraPrefab;
 
-    void Start() {
-        textName.text = raider.characterName;
-        followCamera = Instantiate(followCameraPrefab, raider.gameObject.transform);
-        followCamera.transform.position += new Vector3(0, 0.3f, 0);
-    }
+        [SerializeField]
+        protected Slider healthSlider;
+        [SerializeField]
+        protected Slider fearSlider;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+        protected Camera followCamera;
 
-    public void OnClose() {
-        Destroy(followCamera);
+        void Start() {
+            textName.text = raider.characterName;
+            followCamera = Instantiate(followCameraPrefab, raider.gameObject.transform);
+            followCamera.transform.position += new Vector3(0, 0.3f, 0);
+            healthSlider.maxValue = raider.maxHealth;
+        }
+
+        // Update is called once per frame
+        void Update() {
+            healthSlider.value = raider.currentHealth;
+            fearSlider.value = raider.currentFear;
+        }
+
+        public void OnClose() {
+            Destroy(followCamera);
+        }
     }
 }

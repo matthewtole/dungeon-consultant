@@ -16,6 +16,8 @@ namespace DungeonManager {
         protected Vector2 direction = Vector2.zero;
         protected Vector3 target;
 
+        protected float stunTimeout = 0f;
+
         public float Velocity {
             get { return velocity; }
         }
@@ -25,6 +27,7 @@ namespace DungeonManager {
         }
 
         public void MoveInDirection(Vector3 direction) {
+            if (stunTimeout > 0) { return; }
             if (velocity > 0) { return; }
             target = gameObject.transform.position + direction.normalized;
             velocity = speed;
@@ -33,11 +36,25 @@ namespace DungeonManager {
             onDirectionChange.Invoke();
         }
 
+        public void Stun(float duration) {
+            stunTimeout = Time.time + duration;
+            velocity = 0;
+            direction = Vector3.zero;
+            target = gameObject.transform.position;
+            onVelocityChange.Invoke();
+        }
+
         private void Update() {
             if (velocity > 0 && (gameObject.transform.position - target).magnitude < 0.01f) {
                 gameObject.transform.position = target;
                 velocity = 0;
                 onVelocityChange.Invoke();
+            }
+            if (stunTimeout > 0) {
+                if (Time.time > stunTimeout) {
+                    stunTimeout = 0;
+                    onVelocityChange.Invoke();
+                }
             }
         }
 

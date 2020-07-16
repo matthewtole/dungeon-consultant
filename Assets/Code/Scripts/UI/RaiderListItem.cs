@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class RaiderListItem : MonoBehaviour
-{
-    [SerializeField]
-    protected TextMeshProUGUI textName;
+namespace DungeonManager {
+    public class RaiderListItem : MonoBehaviour {
+        [SerializeField]
+        protected TextMeshProUGUI textName;
 
-    public RaiderListModal modal;
+        public RaiderListModal modal;
 
-    protected Raider raider;
+        protected Raider raider;
 
-    public void SetRaider(Raider raider) {
-        this.raider = raider;
-        textName.SetText(raider.characterName);
-    }
+        public void SetRaider(Raider raider) {
+            this.raider = raider;
+            textName.SetText(raider.characterName);
+        }
 
-    public void OnView() {
-        modal.OnView(raider);
+        public void OnView() {
+            modal.OnView(raider);
+        }
     }
 }
