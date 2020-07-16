@@ -9,15 +9,12 @@ namespace Code.Scripts.Characters
         [SerializeField] protected UnityEvent onVelocityChange;
         [SerializeField] protected UnityEvent onDirectionChange;
 
-        private float _velocity = 0f;
-        private Vector2 _direction = Vector2.zero;
         private Vector3 _target;
 
         private float _stunTimeout = 0f;
 
-        public float Velocity => _velocity;
-
-        public Vector2 Direction => _direction;
+        public float Velocity { get; private set; } = 0f;
+        public Vector2 Direction { get; private set; } = Vector2.zero;
 
         public void MoveInDirection(Vector3 moveDirection)
         {
@@ -26,14 +23,14 @@ namespace Code.Scripts.Characters
                 return;
             }
 
-            if (_velocity > 0)
+            if (Velocity > 0)
             {
                 return;
             }
 
             _target = gameObject.transform.position + moveDirection.normalized;
-            _velocity = speed;
-            _direction = moveDirection;
+            Velocity = speed;
+            Direction = moveDirection;
             onVelocityChange.Invoke();
             onDirectionChange.Invoke();
         }
@@ -41,18 +38,18 @@ namespace Code.Scripts.Characters
         public void Stun(float duration)
         {
             _stunTimeout = Time.time + duration;
-            _velocity = 0;
-            _direction = Vector3.zero;
+            Velocity = 0;
+            Direction = Vector3.zero;
             _target = gameObject.transform.position;
             onVelocityChange.Invoke();
         }
 
         private void Update()
         {
-            if (_velocity > 0 && (gameObject.transform.position - _target).magnitude < 0.01f)
+            if (Velocity > 0 && (gameObject.transform.position - _target).magnitude < 0.01f)
             {
                 gameObject.transform.position = _target;
-                _velocity = 0;
+                Velocity = 0;
                 onVelocityChange.Invoke();
             }
 
@@ -72,7 +69,7 @@ namespace Code.Scripts.Characters
 
         void FixedUpdate()
         {
-            if (_velocity > 0)
+            if (Velocity > 0)
             {
                 gameObject.transform.position =
                     Vector3.MoveTowards(gameObject.transform.position, _target, Time.deltaTime * speed);
