@@ -1,24 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Code.Scripts.Raiders;
 using TMPro;
 using UnityEngine;
 
-namespace DungeonManager {
-    public class RaiderListItem : MonoBehaviour {
-        [SerializeField]
-        protected TextMeshProUGUI textName;
+namespace Code.Scripts.UI
+{
+    public class RaiderListItem : MonoBehaviour
+    {
+        [SerializeField] protected TextMeshProUGUI textName;
 
         public RaiderListModal modal;
 
-        protected Raider raider;
+        private Raider _raider;
 
-        public void SetRaider(Raider raider) {
-            this.raider = raider;
+        public void SetRaider(Raider raider)
+        {
+            _raider = raider;
             textName.SetText(raider.characterName);
         }
 
-        public void OnView() {
-            modal.OnView(raider);
+        public void OnView()
+        {
+            modal.OnView(_raider);
         }
     }
 }

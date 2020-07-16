@@ -1,18 +1,19 @@
-﻿using DungeonManager;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ModalManager : MonoBehaviour
+namespace Code.Scripts.UI
 {
-    protected Modal activeModal = null;
+    public class ModalManager : MonoBehaviour
+    {
+        protected Modal activeModal = null;
 
-    [SerializeField]
-    protected Canvas canvas;
+        [SerializeField] protected Canvas canvas;
 
-    [SerializeField]
-    protected GameObject raiderModal;
+        [SerializeField] protected GameObject raiderModal;
 
-    public void ShowRaiderModal() {
-        GameObject modal = Instantiate(raiderModal, canvas.transform);
-        activeModal = modal.GetComponent<Modal>();
+        public void ShowRaiderModal()
+        {
+            GameObject modal = Instantiate(raiderModal, canvas.transform);
+            activeModal = modal.GetComponent<Modal>();
+        }
     }
 }

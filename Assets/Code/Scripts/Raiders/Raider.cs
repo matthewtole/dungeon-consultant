@@ -1,35 +1,38 @@
-﻿using DungeonManager;
+﻿using Code.Scripts.Characters;
 using UnityEngine;
 
-namespace DungeonManager {
-    public interface IDamagable {
+namespace Code.Scripts.Raiders
+{
+    public interface IDamagable
+    {
         void TakeDamage(Transform from, float amount);
     }
 
-    public class Raider : MonoBehaviour, IDamagable {
-        [SerializeField]
-        protected ObjectList raiderList;
-        [SerializeField]
-        protected CharacterAnimation characterAnimation;
-        [SerializeField]
-        protected CharacterMovement characterMovement;
+    public class Raider : MonoBehaviour, IDamagable
+    {
+        [SerializeField] protected ObjectList raiderList;
+        [SerializeField] protected CharacterAnimation characterAnimation;
+        [SerializeField] protected CharacterMovement characterMovement;
 
         public string characterName;
         public float maxHealth = 100;
-        
+
         public float currentHealth;
         public float currentFear = 0;
 
-        private void Awake() {
+        private void Awake()
+        {
             raiderList.Add(gameObject);
             currentHealth = maxHealth;
         }
 
-        private void OnDestroy() {
+        private void OnDestroy()
+        {
             raiderList.Remove(gameObject);
         }
 
-        public void TakeDamage(Transform from, float amount) {
+        public void TakeDamage(Transform from, float amount)
+        {
             characterAnimation.GetHit(from.position);
 
             transform.position = Vector3Int.RoundToInt(transform.position);
@@ -39,11 +42,12 @@ namespace DungeonManager {
             currentFear += 10;
         }
 
-        private void Update() {
-            if (currentFear > 0) {
+        private void Update()
+        {
+            if (currentFear > 0)
+            {
                 currentFear -= 0.001f;
             }
         }
     }
-
 }
