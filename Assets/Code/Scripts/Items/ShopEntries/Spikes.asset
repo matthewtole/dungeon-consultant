@@ -19,4 +19,7 @@ MonoBehaviour:
   buildLayers:
     serializedVersion: 2
     m_Bits: 256
+  noBuildLayers:
+    serializedVersion: 2
+    m_Bits: 1536
   label: Floor Spikes

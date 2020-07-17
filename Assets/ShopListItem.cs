@@ -13,19 +13,24 @@ public class ShopListItem : MonoBehaviour
     [SerializeField] protected TMP_Text priceText;
     [SerializeField] protected Image iconImage;
     
-    void Start()
-    {
-    }
-    
+    [SerializeField] protected ShopModal shopModal;
+
 #if UNITY_EDITOR
     private void Update()
     {
-        if (entry && labelText && priceText && iconImage)
+        if (!entry || !labelText || !priceText || !iconImage)
         {
-            labelText.SetText(entry.label);
-            priceText.SetText(entry.cost.ToString());
-            iconImage.sprite = entry.shopImage;
+            return;
         }
+
+        labelText.SetText(entry.label);
+        priceText.SetText(entry.cost.ToString());
+        iconImage.sprite = entry.shopImage;
     }
 #endif
+
+    public void OnBuy()
+    {
+        shopModal.OnBuyItem(entry);
+    }
 }

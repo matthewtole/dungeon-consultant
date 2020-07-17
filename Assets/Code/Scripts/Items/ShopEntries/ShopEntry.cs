@@ -9,6 +9,7 @@ namespace Code.Scripts.Items.ShopEntries
         public int cost;
         public Sprite shopImage;
         public LayerMask buildLayers;
+        public LayerMask noBuildLayers;
         public string label;
     }
 }
