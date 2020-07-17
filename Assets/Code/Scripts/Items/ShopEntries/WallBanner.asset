@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be78fb63e7c8c9e49966685a9b7e1771, type: 3}
-  m_Name: Crate
+  m_Name: WallBanner
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8045418609560476845, guid: 80d47e28e44333149b8c7275cc362d1b, type: 3}
-  graphicsPrefab: {fileID: 5293863401287215800, guid: 4fef9f2bd444bb84a93a1d7cbb9f568b,
+  prefab: {fileID: 6483057824436629022, guid: b12c5798ea7d7c240a0e11f3fac80ea8, type: 3}
+  graphicsPrefab: {fileID: 5986997605834871093, guid: 6f0f07a185b334142bd29c861f9189dc,
     type: 3}
-  cost: 20
-  shopImage: {fileID: -363558525015309578, guid: 7cd6be6f955a84d4ead7e9a94d4ccce4,
+  cost: 5
+  shopImage: {fileID: 8635056792443113358, guid: 7cd6be6f955a84d4ead7e9a94d4ccce4,
     type: 3}
   buildLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
   noBuildLayers:
     serializedVersion: 2
-    m_Bits: 1536
-  label: Wooden Crate
+    m_Bits: 1024
+  label: Wall Banner

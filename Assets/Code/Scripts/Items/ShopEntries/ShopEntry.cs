@@ -6,6 +6,7 @@ namespace Code.Scripts.Items.ShopEntries
     public class ShopEntry : ScriptableObject
     {
         public GameObject prefab;
+        public GameObject graphicsPrefab;
         public int cost;
         public Sprite shopImage;
         public LayerMask buildLayers;

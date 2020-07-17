@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Spikes
   m_EditorClassIdentifier: 
   prefab: {fileID: 7989229572189850787, guid: b177e1caaba9db54d90b7c51a09ce4e9, type: 3}
+  graphicsPrefab: {fileID: 4475164387630029920, guid: e4a61d9f5effd4245be76067d0fa8346,
+    type: 3}
   cost: 50
   shopImage: {fileID: 448944209747891393, guid: 7cd6be6f955a84d4ead7e9a94d4ccce4,
     type: 3}

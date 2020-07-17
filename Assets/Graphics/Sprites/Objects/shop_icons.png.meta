@@ -11,6 +11,54 @@ TextureImporter:
   - first:
       213: 448944209747891393
     second: shop_icons_2
+  - first:
+      213: 6333676402855498591
+    second: shop_icons_0
+  - first:
+      213: -3282011994587663974
+    second: shop_icons_1
+  - first:
+      213: 2468663518873998864
+    second: shop_icons_2
+  - first:
+      213: 8635056792443113358
+    second: shop_icons_3
+  - first:
+      213: -5013088984007986082
+    second: shop_icons_4
+  - first:
+      213: 418663754597983719
+    second: shop_icons_5
+  - first:
+      213: 5060845283113616733
+    second: shop_icons_6
+  - first:
+      213: -8717769820958381594
+    second: shop_icons_7
+  - first:
+      213: -2866958930705614152
+    second: shop_icons_8
+  - first:
+      213: 7314703209935280110
+    second: shop_icons_9
+  - first:
+      213: -640225155594238803
+    second: shop_icons_10
+  - first:
+      213: -5568480603244635893
+    second: shop_icons_11
+  - first:
+      213: -847399131835946919
+    second: shop_icons_12
+  - first:
+      213: 5053918828585807189
+    second: shop_icons_13
+  - first:
+      213: 5852822788968490373
+    second: shop_icons_14
+  - first:
+      213: -4856999898230940798
+    second: shop_icons_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -122,8 +170,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f2c56d927164faf0800000000000000
-      internalID: -363558525015309578
+      spriteID: f53d972912db5e750800000000000000
+      internalID: 6333676402855498591
       vertices: []
       indices: 
       edges: []
@@ -143,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 254b5ff84348207c0800000000000000
-      internalID: -4106574548920060846
+      spriteID: a91f702da73f372d0800000000000000
+      internalID: -3282011994587663974
       vertices: []
       indices: 
       edges: []
@@ -164,8 +212,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c4ddf15168fa3600800000000000000
-      internalID: 448944209747891393
+      spriteID: 01653701464724220800000000000000
+      internalID: 2468663518873998864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shop_icons_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f45e8f662e5d770800000000000000
+      internalID: 8635056792443113358
       vertices: []
       indices: 
       edges: []

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Chest
   m_EditorClassIdentifier: 
   prefab: {fileID: 1363041775634879716, guid: 2a9457367f2309d45af78debc69815cd, type: 3}
+  graphicsPrefab: {fileID: 6232927321635854045, guid: 2da6c5597cf10644abb3eab9db87ca14,
+    type: 3}
   cost: 10
   shopImage: {fileID: -4106574548920060846, guid: 7cd6be6f955a84d4ead7e9a94d4ccce4,
     type: 3}
