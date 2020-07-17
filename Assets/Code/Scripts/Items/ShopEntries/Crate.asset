@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be78fb63e7c8c9e49966685a9b7e1771, type: 3}
-  m_Name: Chest
+  m_Name: Crate
   m_EditorClassIdentifier: 
-  prefab: {fileID: 1363041775634879716, guid: 2a9457367f2309d45af78debc69815cd, type: 3}
-  cost: 10
-  shopImage: {fileID: -4106574548920060846, guid: 7cd6be6f955a84d4ead7e9a94d4ccce4,
+  prefab: {fileID: 8045418609560476845, guid: 80d47e28e44333149b8c7275cc362d1b, type: 3}
+  cost: 20
+  shopImage: {fileID: -363558525015309578, guid: 7cd6be6f955a84d4ead7e9a94d4ccce4,
     type: 3}
   buildLayers:
     serializedVersion: 2
@@ -22,4 +22,4 @@ MonoBehaviour:
   noBuildLayers:
     serializedVersion: 2
     m_Bits: 1536
-  label: Wooden Chest
+  label: Wooden Crate

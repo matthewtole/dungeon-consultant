@@ -13,7 +13,7 @@ public class ItemBuilder : MonoBehaviour
     private ContactFilter2D _contactFilterNoBuild;
     private BoxCollider2D _boxCollider2D;
 
-    private void Start()
+    private void Awake()
     {
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _camera = Camera.main;
@@ -24,7 +24,7 @@ public class ItemBuilder : MonoBehaviour
         _shopEntry = entry;
         _buildObject = Instantiate(_shopEntry.prefab, transform);
         _buildObject.transform.position = Vector3.zero;
-        //_boxCollider2D.size = _buildObject.GetComponent<BoxCollider2D>().size;
+        _boxCollider2D.size = _buildObject.GetComponent<BoxCollider2D>().size;
         _contactFilter = new ContactFilter2D {layerMask = _shopEntry.buildLayers, useLayerMask = true, useTriggers = true};
         _contactFilterNoBuild = new ContactFilter2D {layerMask = _shopEntry.noBuildLayers, useLayerMask = true, useTriggers = true};
     }

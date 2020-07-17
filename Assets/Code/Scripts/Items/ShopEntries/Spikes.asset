@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 7989229572189850787, guid: b177e1caaba9db54d90b7c51a09ce4e9, type: 3}
   cost: 50
-  shopImage: {fileID: -7836376798481834204, guid: 18551caef1ccfff4aa16261508ac3700,
+  shopImage: {fileID: 448944209747891393, guid: 7cd6be6f955a84d4ead7e9a94d4ccce4,
     type: 3}
   buildLayers:
     serializedVersion: 2
