@@ -19503,18 +19503,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 269031819, guid: bcf32a4aaf9453749b9ee72e402c4142, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 269031819, guid: bcf32a4aaf9453749b9ee72e402c4142, type: 3}
-      propertyPath: layerMask.m_Bits
-      value: 1536
-      objectReference: {fileID: 0}
     - target: {fileID: 4708352099887841165, guid: bcf32a4aaf9453749b9ee72e402c4142,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4708352099887841165, guid: bcf32a4aaf9453749b9ee72e402c4142,
         type: 3}

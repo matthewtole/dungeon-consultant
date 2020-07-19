@@ -227,7 +227,7 @@ MonoBehaviour:
   movement: {fileID: 269031818}
   layerMask:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1536
 --- !u!61 &1349478263
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.99, y: 0.99}
   m_EdgeRadius: 0
 --- !u!114 &1349478262
 MonoBehaviour:
@@ -270,6 +270,9 @@ MonoBehaviour:
   characterAnimation: {fileID: 4708352099689160703}
   characterMovement: {fileID: 269031818}
   characterName: Hama Agosto
+  maxHealth: 100
+  currentHealth: 0
+  currentFear: 0
 --- !u!50 &786270578
 Rigidbody2D:
   serializedVersion: 4

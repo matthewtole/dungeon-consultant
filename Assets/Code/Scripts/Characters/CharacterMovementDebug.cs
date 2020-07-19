@@ -13,7 +13,7 @@ namespace Code.Scripts.Characters
 
         void Start()
         {
-            DoRandomMovement();
+            Invoke(nameof(DoRandomMovement), 1f);
         }
 
         private void DoRandomMovement()
