@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using Code.Scripts.Raiders;
+﻿using Code.Scripts.Raiders;
 using Code.Scripts.UI;
 using UnityEngine;
 

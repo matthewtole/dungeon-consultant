@@ -1,5 +1,4 @@
-﻿using Code.Scripts.Items;
-using Code.Scripts.Items.ShopEntries;
+﻿using Code.Scripts.Items.ShopEntries;
 using UnityEngine;
 
 namespace Code.Scripts.UI

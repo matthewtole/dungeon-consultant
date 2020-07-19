@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Serialization;
 
 [Serializable]
 public struct MovableLayers
 {
     public Vector2Int offset;
-    [FormerlySerializedAs("canBuild")] public LayerMask validPlacementLayers;
-    [FormerlySerializedAs("cannotBuild")] public LayerMask invalidPlacementLayers;
+    public LayerMask validPlacementLayers;
+    public LayerMask invalidPlacementLayers;
 }
 
 public class MovableItem : MonoBehaviour
