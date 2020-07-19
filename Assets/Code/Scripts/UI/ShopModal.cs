@@ -9,11 +9,16 @@ namespace Code.Scripts.UI
         [SerializeField] protected Modal modal;
         [SerializeField] protected GameObject itemBuilderPrefab;
 
+        private GameObject _builder = null;
+
         public void OnBuyItem(ShopEntry entry)
         {
-            modal.Close();
-            GameObject builder = Instantiate(itemBuilderPrefab);
-            builder.GetComponent<ItemBuilder>().Init(entry);
+            if (_builder)
+            {
+                Destroy(_builder);
+            }
+            _builder = Instantiate(itemBuilderPrefab);
+            _builder.GetComponent<ItemBuilder>().Init(entry);
         }
     }
 }
