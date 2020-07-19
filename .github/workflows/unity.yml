@@ -12,9 +12,20 @@ jobs:
      runs-on: ubuntu-latest
      steps:
       - uses: actions/checkout@v2
+      - uses: actions/cache@v1.1.0
+        with:
+          path: /Library
+          key: Library-DungeonManager-WebGL
+          restore-keys: |
+            Library-DungeonManager-
+            Library-
       - uses: webbertakken/unity-builder@v1.1
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           unityVersion: 2019.4.4f1
           targetPlatform: WebGL
+      - uses: actions/upload-artifact@v1
+        with:
+          name: Build
+          path: build 
