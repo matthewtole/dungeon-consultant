@@ -13,7 +13,9 @@ jobs:
      steps:
       - uses: actions/checkout@v2
       - uses: webbertakken/unity-builder@v1.1
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-          projectPath: $GITHUB_WORKSPACE
+          projectPath: ${{ GITHUB_WORKSPACE }}
           unityVersion: 2019.4.4f1
           targetPlatform: WebGL
