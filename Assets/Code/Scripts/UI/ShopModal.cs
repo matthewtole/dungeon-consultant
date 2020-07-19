@@ -15,7 +15,7 @@ namespace Code.Scripts.UI
         {
             if (_currentlyBuilding != null)
             {
-                return;
+                OnBuildCancel();
             }
             
             _gameObject = Instantiate(entry.prefab);
