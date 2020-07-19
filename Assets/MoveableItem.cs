@@ -42,6 +42,9 @@ public class MoveableItem : MonoBehaviour
         onMoveStarted.Invoke();
         _isMoving = true;
         _moveDebounce = Time.time + 0.1f;
+        
+        transform.position =
+            Vector3Int.RoundToInt(_camera.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10f));
     }
 
     private void Update()
