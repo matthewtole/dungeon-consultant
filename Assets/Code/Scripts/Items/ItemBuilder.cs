@@ -1,4 +1,5 @@
 ﻿using Code.Scripts.Items.ShopEntries;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace Code.Scripts.Items
@@ -25,7 +26,7 @@ namespace Code.Scripts.Items
         {
             _shopEntry = entry;
             _buildObject = Instantiate(_shopEntry.graphicsPrefab, transform);
-            _buildObject.transform.position = Vector3.zero;
+            transform.position = _buildObject.transform.position = Vector3.zero;
             _contactFilter = new ContactFilter2D {layerMask = _shopEntry.buildLayers, useLayerMask = true, useTriggers = true};
             _contactFilterNoBuild = new ContactFilter2D {layerMask = _shopEntry.noBuildLayers, useLayerMask = true, useTriggers = true};
         }
@@ -55,7 +56,15 @@ namespace Code.Scripts.Items
             
             Destroy(_buildObject);
             Instantiate(_shopEntry.prefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                Init(_shopEntry);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
 
         private void CancelBuild()
