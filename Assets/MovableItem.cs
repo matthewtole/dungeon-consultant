@@ -6,14 +6,14 @@ using UnityEngine.Events;
 using UnityEngine.Serialization;
 
 [Serializable]
-public struct MoveableLayers
+public struct MovableLayers
 {
     public Vector2Int offset;
     [FormerlySerializedAs("canBuild")] public LayerMask validPlacementLayers;
     [FormerlySerializedAs("cannotBuild")] public LayerMask invalidPlacementLayers;
 }
 
-public class MoveableItem : MonoBehaviour
+public class MovableItem : MonoBehaviour
 {
     private bool _isMoving = false;
     private Camera _camera;
@@ -24,7 +24,7 @@ public class MoveableItem : MonoBehaviour
 
     private Vector3 _lastPosition;
 
-    [SerializeField] protected MoveableLayers[] layers;
+    [SerializeField] protected MovableLayers[] layers;
     public UnityEvent onMoveCompleted;
     public UnityEvent onMoveCancelled;
     public UnityEvent onMoveStarted;
@@ -42,7 +42,6 @@ public class MoveableItem : MonoBehaviour
         _originalPosition = transform.position;
         _originalLayer = gameObject.layer;
         gameObject.layer = LayerMask.NameToLayer("UI");
-        onMoveStarted.Invoke();
         _isMoving = true;
         _moveDebounce = Time.time + 0.1f;
         
@@ -50,6 +49,7 @@ public class MoveableItem : MonoBehaviour
             Vector3Int.RoundToInt(_camera.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10f));
 
         UpdatePlacementDisplay();
+        onMoveStarted.Invoke();
     }
 
     private void UpdatePlacementDisplay()

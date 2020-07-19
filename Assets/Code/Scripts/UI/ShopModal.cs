@@ -19,8 +19,8 @@ namespace Code.Scripts.UI
             }
             
             _gameObject = Instantiate(entry.prefab);
-            MoveableItem moveable = _gameObject.GetComponent<MoveableItem>();
-            if (!moveable)
+            MovableItem movable = _gameObject.GetComponent<MovableItem>();
+            if (!movable)
             {
                 Debug.LogError("Tried to build an item that isn't moveable!");
                 Destroy(_gameObject);
@@ -28,9 +28,9 @@ namespace Code.Scripts.UI
             }
 
             _currentlyBuilding = entry;
-            moveable.onMoveCompleted.AddListener(OnBuildComplete);
-            moveable.onMoveCancelled.AddListener(OnBuildCancel);
-            moveable.Move();
+            movable.onMoveCompleted.AddListener(OnBuildComplete);
+            movable.onMoveCancelled.AddListener(OnBuildCancel);
+            movable.Move();
             
         }
 
@@ -42,6 +42,9 @@ namespace Code.Scripts.UI
 
         private void OnBuildComplete()
         {
+            _gameObject.GetComponent<MovableItem>().onMoveCompleted.RemoveListener(OnBuildComplete);
+            _gameObject.GetComponent<MovableItem>().onMoveCancelled.RemoveListener(OnBuildCancel);
+            
             // TODO: Spend the money!
             if (Input.GetKey(KeyCode.LeftShift))
             {
@@ -53,6 +56,7 @@ namespace Code.Scripts.UI
             {
                 _currentlyBuilding = null;
             }
+            
         }
     }
 }

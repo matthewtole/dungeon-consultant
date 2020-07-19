@@ -9,7 +9,6 @@ namespace Code.Scripts.Items
 
         void Start()
         {
-            animator.SetBool(Lit, true);
         }
 
         public void Light()

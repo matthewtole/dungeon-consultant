@@ -3,12 +3,12 @@ using UnityEngine;
 
 namespace Code.Scripts.Raiders
 {
-    public interface IDamagable
+    public interface IDamageable
     {
         void TakeDamage(Transform from, float amount);
     }
 
-    public class Raider : MonoBehaviour, IDamagable
+    public class Raider : MonoBehaviour, IDamageable
     {
         [SerializeField] protected ObjectList raiderList;
         [SerializeField] protected CharacterAnimation characterAnimation;

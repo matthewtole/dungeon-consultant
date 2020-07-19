@@ -43,7 +43,7 @@ namespace Code.Scripts.Items
                 return;
             }
 
-            IDamagable dm = collision.GetComponent<IDamagable>();
+            IDamageable dm = collision.GetComponent<IDamageable>();
             if (dm == null)
             {
                 return;

@@ -52,12 +52,12 @@ namespace Code.Scripts
                 RaycastHit2D ray = Physics2D.Raycast(_camera.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 0, layerMaskMove);
                 if (ray)
                 {
-                    MoveableItem moveable = ray.collider.GetComponent<MoveableItem>();
-                    if (moveable)
+                    MovableItem movable = ray.collider.GetComponent<MovableItem>();
+                    if (movable)
                     {
-                        moveable.Move();
-                        moveable.onMoveCancelled.AddListener(OnItemMoveFinished);
-                        moveable.onMoveCompleted.AddListener(OnItemMoveFinished);
+                        movable.Move();
+                        movable.onMoveCancelled.AddListener(OnItemMoveFinished);
+                        movable.onMoveCompleted.AddListener(OnItemMoveFinished);
                         _isMovingItem = true;
                     }
                 }
