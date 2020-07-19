@@ -9,8 +9,8 @@ using UnityEngine.Serialization;
 public struct MoveableLayers
 {
     public Vector2Int offset;
-    public LayerMask canBuild;
-    public LayerMask cannotBuild;
+    [FormerlySerializedAs("canBuild")] public LayerMask validPlacementLayers;
+    [FormerlySerializedAs("cannotBuild")] public LayerMask invalidPlacementLayers;
 }
 
 public class MoveableItem : MonoBehaviour
@@ -22,10 +22,14 @@ public class MoveableItem : MonoBehaviour
     private Vector3 _originalPosition;
     private float _moveDebounce;
 
+    private Vector3 _lastPosition;
+
     [SerializeField] protected MoveableLayers[] layers;
     public UnityEvent onMoveCompleted;
     public UnityEvent onMoveCancelled;
     public UnityEvent onMoveStarted;
+    private readonly Color _invalidColor = new Color(255, 255, 255, 0.3f);
+    private readonly Color _validColor = new Color(255, 255, 255, 0.7f);
 
     private void Awake()
     {
@@ -35,7 +39,6 @@ public class MoveableItem : MonoBehaviour
 
     public void Move()
     {
-        _spriteRenderer.color = new Color(255, 255, 255, 0.5f);
         _originalPosition = transform.position;
         _originalLayer = gameObject.layer;
         gameObject.layer = LayerMask.NameToLayer("UI");
@@ -45,6 +48,19 @@ public class MoveableItem : MonoBehaviour
         
         transform.position =
             Vector3Int.RoundToInt(_camera.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10f));
+
+        UpdatePlacementDisplay();
+    }
+
+    private void UpdatePlacementDisplay()
+    {
+        if (transform.position.Equals(_lastPosition))
+        {
+            return;
+        }
+
+        _lastPosition = transform.position;
+        _spriteRenderer.color = IsValidPlacement() ? _validColor : _invalidColor;
     }
 
     private void Update()
@@ -70,29 +86,29 @@ public class MoveableItem : MonoBehaviour
         onMoveCancelled.Invoke();
     }
 
-    private bool CanBuild()
+    private bool IsValidPlacement()
     {
         Vector3 position = transform.position;
         
         return Array.TrueForAll(layers, layer =>
         {
             Vector3 layerPosition = position + new Vector3(layer.offset.x, layer.offset.y, 0);
-            RaycastHit2D buildHit = Physics2D.Raycast(layerPosition, Vector2.zero, 0,
-                layer.canBuild);
-            if (!buildHit)
+            RaycastHit2D validPositionHit = Physics2D.Raycast(layerPosition, Vector2.zero, 0,
+                layer.validPlacementLayers);
+            if (!validPositionHit)
             {
                 return false;
             }
 
-            RaycastHit2D noBuildHit = Physics2D.Raycast(layerPosition, Vector2.zero, 0,
-                layer.cannotBuild);
-            return !noBuildHit;
+            RaycastHit2D invalidPositionHit = Physics2D.Raycast(layerPosition, Vector2.zero, 0,
+                layer.invalidPlacementLayers);
+            return !invalidPositionHit;
         });
     }
     
     private void FinishMove()
     {
-        if (CanBuild())
+        if (IsValidPlacement())
         {
             ResetObject();
             onMoveCompleted.Invoke();
@@ -113,6 +129,7 @@ public class MoveableItem : MonoBehaviour
         {
             transform.position =
                 Vector3Int.RoundToInt(_camera.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10f));
+            UpdatePlacementDisplay();
         }
     }
 }
