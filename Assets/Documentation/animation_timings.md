@@ -14,7 +14,8 @@ Timings: 0 0.09 0.18 0.27 0.36
 
 ### Attack
 
-
+Frame sequence: 1 2 3 4
+Timings: 0 0.18 0.24 0.30 0.42
 
 ### Hit
 
