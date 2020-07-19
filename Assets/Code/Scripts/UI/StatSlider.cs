@@ -1,62 +1,63 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-[ExecuteInEditMode]
-public class StatSlider : MonoBehaviour
+namespace Code.Scripts.UI
 {
-    [SerializeField] protected Slider slider;
-
-    [SerializeField] protected TextMeshProUGUI textLabel;
-
-    [SerializeField] protected TextMeshProUGUI textValue;
-
-    [SerializeField] protected string label;
-
-    [SerializeField] protected bool showAsPercent = false;
-
-
-    public void OnValueChanged()
+    [ExecuteInEditMode]
+    public class StatSlider : MonoBehaviour
     {
-        UpdateValueLabel();
-    }
+        [SerializeField] protected Slider slider;
 
-    private void UpdateValueLabel()
-    {
-        if (textValue == null || slider == null)
+        [SerializeField] protected TextMeshProUGUI textLabel;
+
+        [SerializeField] protected TextMeshProUGUI textValue;
+
+        [SerializeField] protected string label;
+
+        [SerializeField] protected bool showAsPercent = false;
+
+
+        public void OnValueChanged()
         {
-            return;
+            UpdateValueLabel();
         }
 
-        if (showAsPercent)
+        private void UpdateValueLabel()
         {
-            int percent = (int) Math.Round(100 * slider.normalizedValue);
-            StringBuilder sb = new StringBuilder();
-            sb.Append(percent);
-            sb.Append("%");
-            textValue.SetText(sb.ToString());
+            if (textValue == null || slider == null)
+            {
+                return;
+            }
+
+            if (showAsPercent)
+            {
+                int percent = (int) Math.Round(100 * slider.normalizedValue);
+                StringBuilder sb = new StringBuilder();
+                sb.Append(percent);
+                sb.Append("%");
+                textValue.SetText(sb.ToString());
+            }
+            else
+            {
+                textValue.SetText(slider.value.ToString(CultureInfo.InvariantCulture));
+            }
         }
-        else
-        {
-            textValue.SetText(slider.value.ToString(CultureInfo.InvariantCulture));
-        }
-    }
 
 #if UNITY_EDITOR
-    private void Update()
-    {
-        if (textLabel != null)
+        private void Update()
         {
-            textLabel.SetText(label);
+            if (textLabel != null)
+            {
+                textLabel.SetText(label);
+            }
+
+            UpdateValueLabel();
         }
 
-        UpdateValueLabel();
-    }
-
 #endif
+    }
 }

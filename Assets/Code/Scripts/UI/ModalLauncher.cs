@@ -1,16 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Code.Scripts.UI;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
-public class ModalLauncher : MonoBehaviour
+namespace Code.Scripts.UI
 {
-    [SerializeField] protected GameObject modalPrefab;
-    [SerializeField] protected Canvas canvas;
-
-    public void Launch()
+    public class ModalLauncher : MonoBehaviour
     {
-        Instantiate(modalPrefab, canvas.transform);
+        [SerializeField] protected GameObject modalPrefab;
+        [SerializeField] protected Canvas canvas;
+
+        public void Launch()
+        {
+            Instantiate(modalPrefab, canvas.transform);
+        }
     }
 }

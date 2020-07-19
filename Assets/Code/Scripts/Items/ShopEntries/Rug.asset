@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be78fb63e7c8c9e49966685a9b7e1771, type: 3}
+  m_Name: Rug
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8652152196788887483, guid: 8e3e7a88545d41747a5e2c54fe20799f, type: 3}
+  graphicsPrefab: {fileID: 5673781159952484340, guid: 55483da8571ca404583019a445860c45,
+    type: 3}
+  cost: 100
+  shopImage: {fileID: -5013088984007986082, guid: 7cd6be6f955a84d4ead7e9a94d4ccce4,
+    type: 3}
+  buildLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  noBuildLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  label: Fancy Rug

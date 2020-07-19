@@ -34,6 +34,12 @@ namespace Code.Scripts.Items
         // Update is called once per frame
         void Update()
         {
+            if (Input.GetMouseButtonUp(1))
+            {
+                CancelBuild();
+                return;
+            }
+            
             if (!Input.GetMouseButtonUp(0) || !_buildObject || !(Time.time > _buildTimeout))
             {
                 return;
@@ -49,6 +55,12 @@ namespace Code.Scripts.Items
             
             Destroy(_buildObject);
             Instantiate(_shopEntry.prefab, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+
+        private void CancelBuild()
+        {
+            Destroy(_buildObject);
             Destroy(gameObject);
         }
 
