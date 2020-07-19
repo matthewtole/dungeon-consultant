@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1846625044170891778}
   - component: {fileID: 1846625044170891779}
   - component: {fileID: 647580343}
+  - component: {fileID: 1403659444}
   m_Layer: 11
   m_Name: MinionGoblin
   m_TagString: Untagged
@@ -150,6 +151,68 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &1403659444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846625044170891781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71351d8c0c5a2c848b4784c358c7cb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers:
+  - offset: {x: 0, y: 0}
+    validPlacementLayers:
+      serializedVersion: 2
+      m_Bits: 256
+    invalidPlacementLayers:
+      serializedVersion: 2
+      m_Bits: 7680
+  onMoveCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1846625044170891777}
+        m_MethodName: EnableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onMoveCancelled:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1846625044170891777}
+        m_MethodName: EnableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onMoveStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1846625044170891777}
+        m_MethodName: DisableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1846625044969536694
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846625044969536694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1846625044170891780}

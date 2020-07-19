@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Code.Scripts.Characters
@@ -74,6 +75,16 @@ namespace Code.Scripts.Characters
                 gameObject.transform.position =
                     Vector3.MoveTowards(gameObject.transform.position, _target, Time.deltaTime * speed);
             }
+        }
+
+        public void DisableMovement()
+        {
+            Stun(Single.PositiveInfinity);
+        }
+
+        public void EnableMovement()
+        {
+            Stun(0);
         }
     }
 }
