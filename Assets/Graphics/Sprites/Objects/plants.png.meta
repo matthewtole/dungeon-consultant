@@ -5,6 +5,15 @@ TextureImporter:
   - first:
       213: -3527876879021525145
     second: plants_0
+  - first:
+      213: -112360752608999789
+    second: plants_0
+  - first:
+      213: -1927889906097043966
+    second: plants_1
+  - first:
+      213: 5004531278555049960
+    second: plants_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -116,8 +125,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 767bb968ba67a0fc0800000000000000
-      internalID: -3527876879021525145
+      spriteID: 3968b06ad70d07ef0800000000000000
+      internalID: -112360752608999789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20646054852ce35e0800000000000000
+      internalID: -1927889906097043966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plants_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efea95ceaaa37540800000000000000
+      internalID: 5004531278555049960
       vertices: []
       indices: 
       edges: []
