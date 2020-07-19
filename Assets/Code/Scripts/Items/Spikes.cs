@@ -24,7 +24,8 @@ namespace Code.Scripts.Items
 
         private void UpdateLayer()
         {
-            gameObject.layer = LayerMask.NameToLayer(_isActive ? "Object" : "Floor");
+            // TODO: Figure out a better way to do this!
+            //gameObject.layer = LayerMask.NameToLayer(_isActive ? "Object" : "Floor");
         }
 
         private void Activate()

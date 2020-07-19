@@ -19342,6 +19342,9 @@ MonoBehaviour:
   raiderInfoPanel: {fileID: 3888869877500655387, guid: 524f7dfa31c88504ea63fc2b169ee69b,
     type: 3}
   canvas: {fileID: 308900081}
+  layerMaskMove:
+    serializedVersion: 2
+    m_Bits: 9216
 --- !u!4 &1540908837
 Transform:
   m_ObjectHideFlags: 0

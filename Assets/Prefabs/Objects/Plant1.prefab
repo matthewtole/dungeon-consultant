@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2992035817821341396}
   - component: {fileID: 2992035817821341397}
+  - component: {fileID: 8216708984276263601}
   m_Layer: 10
-  m_Name: Plant
+  m_Name: Plant1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,6 +59,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.99, y: 0.99}
   m_EdgeRadius: 0
+--- !u!114 &8216708984276263601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2992035817821341394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71351d8c0c5a2c848b4784c358c7cb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers:
+  - offset: {x: 0, y: 0}
+    canBuild:
+      serializedVersion: 2
+      m_Bits: 256
+    cannotBuild:
+      serializedVersion: 2
+      m_Bits: 1536
+  onMoveCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  onMoveCancelled:
+    m_PersistentCalls:
+      m_Calls: []
+  onMoveStarted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &4282405809091641520
 PrefabInstance:
   m_ObjectHideFlags: 0

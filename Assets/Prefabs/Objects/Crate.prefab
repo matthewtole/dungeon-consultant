@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8045418609560476843}
   - component: {fileID: 8045418609560476842}
+  - component: {fileID: 111946566}
   m_Layer: 10
   m_Name: Crate
   m_TagString: Untagged
@@ -56,8 +57,37 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.99}
+  m_Size: {x: 0.99, y: 0.99}
   m_EdgeRadius: 0
+--- !u!114 &111946566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045418609560476845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71351d8c0c5a2c848b4784c358c7cb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers:
+  - offset: {x: 0, y: 0}
+    canBuild:
+      serializedVersion: 2
+      m_Bits: 256
+    cannotBuild:
+      serializedVersion: 2
+      m_Bits: 1536
+  onMoveCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  onMoveCancelled:
+    m_PersistentCalls:
+      m_Calls: []
+  onMoveStarted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &2796881802120713494
 PrefabInstance:
   m_ObjectHideFlags: 0

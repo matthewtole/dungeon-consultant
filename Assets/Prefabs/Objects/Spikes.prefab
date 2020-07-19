@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7989229572189850784}
   - component: {fileID: 7989229572189850785}
   - component: {fileID: 7989229572189850846}
+  - component: {fileID: 4528475934915083676}
   m_Layer: 10
   m_Name: Spikes
   m_TagString: Untagged
@@ -43,7 +44,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -57,7 +58,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.99, y: 0.99}
   m_EdgeRadius: 0
 --- !u!114 &7989229572189850846
 MonoBehaviour:
@@ -73,6 +74,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 7989229572309546253}
   autoActivate: 1
+--- !u!114 &4528475934915083676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989229572189850787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71351d8c0c5a2c848b4784c358c7cb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers:
+  - offset: {x: 0, y: 0}
+    canBuild:
+      serializedVersion: 2
+      m_Bits: 256
+    cannotBuild:
+      serializedVersion: 2
+      m_Bits: 9728
+  onMoveCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  onMoveCancelled:
+    m_PersistentCalls:
+      m_Calls: []
+  onMoveStarted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &5820211729973700975
 PrefabInstance:
   m_ObjectHideFlags: 0

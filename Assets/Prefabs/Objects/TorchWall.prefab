@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 55669412854807892}
   - component: {fileID: 55669412854807893}
   - component: {fileID: -6609508399040590049}
+  - component: {fileID: 1341782645}
   m_Layer: 10
   m_Name: TorchWall
   m_TagString: Untagged
@@ -72,6 +73,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 55669412505311008}
+--- !u!114 &1341782645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55669412854807894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71351d8c0c5a2c848b4784c358c7cb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers:
+  - offset: {x: 0, y: 0}
+    canBuild:
+      serializedVersion: 2
+      m_Bits: 512
+    cannotBuild:
+      serializedVersion: 2
+      m_Bits: 1024
+  - offset: {x: 0, y: -1}
+    canBuild:
+      serializedVersion: 2
+      m_Bits: 256
+    cannotBuild:
+      serializedVersion: 2
+      m_Bits: 512
+  onMoveCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -6609508399040590049}
+        m_MethodName: Light
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onMoveCancelled:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -6609508399040590049}
+        m_MethodName: Light
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onMoveStarted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -6609508399040590049}
+        m_MethodName: PutOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &3301093256626970697
 PrefabInstance:
   m_ObjectHideFlags: 0
