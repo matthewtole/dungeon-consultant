@@ -18,14 +18,22 @@ namespace Code.Scripts.Characters
 
         private void DoRandomMovement()
         {
-            Vector3 direction = Directions[Random.Range(0, 3)];
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 1f, layerMask);
-            if (hit)
+            int direction = Random.Range(0, 3);
+            int directionsTried = 0;
+            while (directionsTried < 4)
             {
-                direction *= -1;
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, Directions[direction], 1f, layerMask);
+                if (hit)
+                {
+                    direction = (direction + 1) % 4;
+                    directionsTried += 1;
+                }
+                else
+                {
+                    movement.MoveInDirection(Directions[direction]);
+                    break;
+                } 
             }
-
-            movement.MoveInDirection(direction);
         }
 
         public void HandleVelocityChange()
