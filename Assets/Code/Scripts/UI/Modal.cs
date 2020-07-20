@@ -12,8 +12,8 @@ namespace Code.Scripts.UI
 
         public void Close()
         {
-            Destroy(gameObject);
             onClose.Invoke();
+            Destroy(gameObject);
         }
 
         public void OnDrag(BaseEventData data)

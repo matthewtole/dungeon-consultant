@@ -34,7 +34,7 @@ namespace Code.Scripts.UI
 
         public void OnClose()
         {
-            Destroy(followCamera);
+            Destroy(followCamera.gameObject);
         }
     }
 }

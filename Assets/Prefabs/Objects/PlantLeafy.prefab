@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2992035817821341397}
   - component: {fileID: 8216708984276263601}
   m_Layer: 10
-  m_Name: Plant1
+  m_Name: PlantLeafy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,10 +73,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layers:
   - offset: {x: 0, y: 0}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 1536
   onMoveCompleted:

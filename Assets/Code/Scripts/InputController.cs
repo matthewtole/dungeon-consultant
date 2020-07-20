@@ -1,4 +1,6 @@
-﻿using Code.Scripts.Raiders;
+﻿using System.Security.Cryptography;
+using Code.Scripts.Minions;
+using Code.Scripts.Raiders;
 using Code.Scripts.UI;
 using UnityEngine;
 
@@ -9,6 +11,9 @@ namespace Code.Scripts
         [SerializeField] protected GameObject raiderInfoPanel;
         [SerializeField] protected Canvas canvas;
         [SerializeField] protected LayerMask layerMaskMove;
+        [SerializeField] protected LayerMask layerMaskClick;
+
+        [SerializeField] protected GameObject minionInfoPanel;
 
         private GameObject _panel = null;
         private Camera _camera;
@@ -29,7 +34,7 @@ namespace Code.Scripts
 
             if (Input.GetMouseButtonUp(0))
             {
-                RaycastHit2D ray = Physics2D.Raycast(_camera.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+                RaycastHit2D ray = Physics2D.Raycast(_camera.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 0f, layerMaskClick);
                 if (ray)
                 {
                     Raider raider = ray.collider.GetComponent<Raider>();
@@ -42,7 +47,29 @@ namespace Code.Scripts
 
                         _panel = Instantiate(raiderInfoPanel, canvas.transform);
                         _panel.GetComponent<RaiderInfoPanel>().raider = raider;
+                        return;
                     }
+
+                    Minion minion = ray.collider.GetComponent<Minion>();
+                    if (minion)
+                    {
+                        if (_panel != null)
+                        {
+                            Destroy(_panel);
+                        }
+                        _panel = Instantiate(minionInfoPanel, canvas.transform);
+                        _panel.GetComponent<MinionDetailsModal>().minion = minion;
+                        return;
+                    }
+
+                    MinionSummonPortal portal = ray.collider.GetComponent<MinionSummonPortal>();
+                    if (portal)
+                    {
+                        portal.OnClick();
+                        return;
+                    }
+                    
+                    Debug.Log(ray.collider.name);
                 }
             }
 
@@ -58,6 +85,7 @@ namespace Code.Scripts
                         movable.onMoveCancelled.AddListener(OnItemMoveFinished);
                         movable.onMoveCompleted.AddListener(OnItemMoveFinished);
                         _isMovingItem = true;
+                        return;
                     }
                 }
             }
