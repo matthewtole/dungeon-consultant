@@ -26,6 +26,7 @@ namespace Code.Scripts.Minions
             Room room = other.GetComponent<Room>();
             if (room)
             {
+                transform.parent = room.transform;
                 _currentRoom = room;
                 if (!_pickedUp)
                 {
@@ -58,6 +59,10 @@ namespace Code.Scripts.Minions
                         characterPathfinding.SetDestination(target.target.transform);
                         _isMoving = true;
                     }
+                    else
+                    {
+                        Invoke(nameof(UpdateCurrentObjective), 3f);
+                    }
 
                     break;
                 default:
@@ -70,6 +75,7 @@ namespace Code.Scripts.Minions
             Room room = other.GetComponent<Room>();
             if (room)
             {
+                transform.parent = null;
                 CancelCurrentObjective();
                 _currentRoom = null;
             }

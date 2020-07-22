@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public struct MovableLayers
@@ -39,9 +40,10 @@ public class MovableItem : MonoBehaviour
         _originalPosition = transform.position;
         _originalLayer = gameObject.layer;
         gameObject.layer = LayerMask.NameToLayer("UI");
+        transform.parent = null;
         _isMoving = true;
         _moveDebounce = Time.time + 0.1f;
-        
+
         transform.position =
             Vector3Int.RoundToInt(_camera.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10f));
 
@@ -80,6 +82,7 @@ public class MovableItem : MonoBehaviour
     {
         ResetObject();
         transform.position = _originalPosition;
+        SetRoom();
         onMoveCancelled.Invoke();
     }
 
@@ -102,13 +105,24 @@ public class MovableItem : MonoBehaviour
             return !invalidPositionHit;
         });
     }
+
+    private void SetRoom()
+    {
+        RaycastHit2D roomHit = Physics2D.Raycast(transform.position, Vector2.zero, 0, LayerMask.GetMask("Room"));
+        if (roomHit)
+        {
+            transform.parent = roomHit.transform;
+        }
+    }
     
     private void FinishMove()
     {
         if (IsValidPlacement())
         {
             ResetObject();
+            SetRoom();
             onMoveCompleted.Invoke();
+            
         }
     }
 
