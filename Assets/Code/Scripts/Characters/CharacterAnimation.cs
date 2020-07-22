@@ -50,8 +50,8 @@ namespace Code.Scripts.Characters
         public void FaceDirection(Vector3 position)
         {
             var currentPosition = transform.position;
-            animator.SetFloat(horizontalFloat, (position - currentPosition).x);
-            animator.SetFloat(verticalFloat, (position - currentPosition).y);
+            animator.SetFloat(horizontalFloat, (position - currentPosition).normalized.x);
+            animator.SetFloat(verticalFloat, (position - currentPosition).normalized.y);
         }
 
         public void GetHit(Vector3 from)

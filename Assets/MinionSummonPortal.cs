@@ -17,8 +17,8 @@ public class MinionSummonPortal : MonoBehaviour
 
     public void OnClick()
     {
-        GameObject minion = Instantiate(minionPrefab, transform.position + Vector3.left, Quaternion.identity);
-        minion.GetComponent<Minion>().Name = _nameGenerator.GenerateName(); 
+        //GameObject minion = Instantiate(minionPrefab, transform.position + Vector3.left, Quaternion.identity);
+        //minion.GetComponent<Minion>().Name = _nameGenerator.GenerateName(); 
         //GetComponentInChildren<ParticleSystem>().Play();
     }
 }

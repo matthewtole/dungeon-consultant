@@ -73,66 +73,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layers:
   - offset: {x: -1, y: -1}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 8704
   - offset: {x: 0, y: -1}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 8704
   - offset: {x: 1, y: -1}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 8704
   - offset: {x: -1, y: 0}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 8704
   - offset: {x: 0, y: 0}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 8704
   - offset: {x: 0, y: 1}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 8704
   - offset: {x: -1, y: 1}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 8704
   - offset: {x: 0, y: 1}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 8704
   - offset: {x: 1, y: 1}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 8704
   onMoveCompleted:

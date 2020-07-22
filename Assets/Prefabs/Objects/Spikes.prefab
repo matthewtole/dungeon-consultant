@@ -88,10 +88,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layers:
   - offset: {x: 0, y: 0}
-    canBuild:
+    validPlacementLayers:
       serializedVersion: 2
       m_Bits: 256
-    cannotBuild:
+    invalidPlacementLayers:
       serializedVersion: 2
       m_Bits: 9728
   onMoveCompleted:

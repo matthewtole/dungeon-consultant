@@ -16,7 +16,7 @@ namespace Code.Scripts.UI
 
         void Start()
         {
-            textName.text = minion.Name;
+            textName.text = minion.characterName;
             _followCamera = Instantiate(followCameraPrefab, minion.gameObject.transform);
             _followCamera.transform.position += new Vector3(0, 0.2f, 0);
         }
