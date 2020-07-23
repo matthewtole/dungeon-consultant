@@ -6,6 +6,8 @@ namespace Code.Scripts.UI
     public class ShopModal : MonoBehaviour
     {
         [SerializeField] protected Modal modal;
+        [SerializeField] protected GameEvent itemBuyEvent;
+        [SerializeField] protected GameEvent itemClickEvent;
 
         private ShopEntry _currentlyBuilding;
         private GameObject _gameObject;
@@ -31,6 +33,8 @@ namespace Code.Scripts.UI
             movable.onMoveCancelled.AddListener(OnBuildCancel);
             movable.Move();
             
+            itemClickEvent.Raise();
+            
         }
 
         private void OnBuildCancel()
@@ -43,6 +47,7 @@ namespace Code.Scripts.UI
         {
             _gameObject.GetComponent<MovableItem>().onMoveCompleted.RemoveListener(OnBuildComplete);
             _gameObject.GetComponent<MovableItem>().onMoveCancelled.RemoveListener(OnBuildCancel);
+            itemBuyEvent.Raise();
             
             // TODO: Spend the money!
             if (Input.GetKey(KeyCode.LeftShift))

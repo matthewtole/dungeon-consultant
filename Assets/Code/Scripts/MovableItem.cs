@@ -1,4 +1,5 @@
 ﻿using System;
+using Code.Scripts;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -26,6 +27,9 @@ public class MovableItem : MonoBehaviour
     public UnityEvent onMoveCompleted;
     public UnityEvent onMoveCancelled;
     public UnityEvent onMoveStarted;
+    [SerializeField] protected GameEvent pickupEvent;
+    [SerializeField] protected GameEvent putdownEvent;
+    
     private readonly Color _invalidColor = new Color(255, 255, 255, 0.3f);
     private readonly Color _validColor = new Color(255, 255, 255, 0.7f);
 
@@ -47,13 +51,13 @@ public class MovableItem : MonoBehaviour
         transform.position =
             Vector3Int.RoundToInt(_camera.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10f));
 
-        UpdatePlacementDisplay();
+        UpdatePlacementDisplay(true);
         onMoveStarted.Invoke();
     }
 
-    private void UpdatePlacementDisplay()
+    private void UpdatePlacementDisplay(bool forceUpdate = false)
     {
-        if (transform.position.Equals(_lastPosition))
+        if (transform.position.Equals(_lastPosition) && !forceUpdate)
         {
             return;
         }
@@ -122,7 +126,7 @@ public class MovableItem : MonoBehaviour
             ResetObject();
             SetRoom();
             onMoveCompleted.Invoke();
-            
+
         }
     }
 

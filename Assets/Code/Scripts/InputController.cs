@@ -14,6 +14,8 @@ namespace Code.Scripts
         [SerializeField] protected LayerMask layerMaskClick;
 
         [SerializeField] protected GameObject minionInfoPanel;
+        [SerializeField] protected GameEvent itemPickupEvent;
+        [SerializeField] protected GameEvent itemPutdownEvent;
 
         private GameObject _panel = null;
         private Camera _camera;
@@ -85,6 +87,7 @@ namespace Code.Scripts
                         movable.onMoveCancelled.AddListener(OnItemMoveFinished);
                         movable.onMoveCompleted.AddListener(OnItemMoveFinished);
                         _isMovingItem = true;
+                        itemPickupEvent.Raise();
                         return;
                     }
                 }
@@ -94,6 +97,7 @@ namespace Code.Scripts
         private void OnItemMoveFinished()
         {
             Invoke(nameof(EndMove), 0.1f);
+            itemPutdownEvent.Raise();
         }
 
         private void EndMove()
