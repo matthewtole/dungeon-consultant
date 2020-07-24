@@ -1,4 +1,4 @@
-# Dungeon Manager
+![Dungeon Manager](https://raw.githubusercontent.com/matthewtole/dungeon-manager/development/Sources/Splash%20Screen/Github%20Preview.png)
 
 Build and run a dungeon to help support the local economy!
 
