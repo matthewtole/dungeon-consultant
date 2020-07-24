@@ -17,7 +17,7 @@ public class CharacterPathfinding : MonoBehaviour
     
     private Path _currentPath;
     private int _currentPathIndex;
-    private Transform _destination;
+    private Vector3 _destination;
 
     private void OnPathDelegate(Path path)
     {
@@ -65,10 +65,10 @@ public class CharacterPathfinding : MonoBehaviour
         }
     }
 
-    public void SetDestination(Transform destination)
+    public void SetDestination(Vector3 destination)
     {
         _destination = destination;
-        seeker.StartPath(transform.position, _destination.position, OnPathDelegate);
+        seeker.StartPath(transform.position, _destination, OnPathDelegate);
     }
 
     public void Stop()

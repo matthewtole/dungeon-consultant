@@ -47,6 +47,8 @@ namespace Code.Scripts.Minions
             switch (_currentRoom.type)
             {
                 case RoomType.General:
+                    Bounds bounds = _currentRoom.GetBounds();
+                    characterPathfinding.SetDestination(Vector3Int.FloorToInt(new Vector3(Random.Range(bounds.min.x, bounds.max.x), Random.Range(bounds.min.y, bounds.max.y), 0)));
                     break;
                 case RoomType.Training:
                     TrainingTarget[] targets = _currentRoom.GetComponentsInChildren<TrainingTarget>();
@@ -56,7 +58,7 @@ namespace Code.Scripts.Minions
                         TrainingTarget target = freeTargets[0];
                         target.currentMinion = this;
                         _attackTarget = target.transform;
-                        characterPathfinding.SetDestination(target.target.transform);
+                        characterPathfinding.SetDestination(target.target.transform.position);
                         _isMoving = true;
                     }
                     else
@@ -141,6 +143,12 @@ namespace Code.Scripts.Minions
         public void HandlePathfindingComplete()
         {
             _isMoving = false;
+            switch (_currentRoom.type)
+            {
+                case RoomType.General:
+                    UpdateCurrentObjective();
+                    break;
+            }
         }
     }
 }

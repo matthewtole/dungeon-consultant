@@ -66,5 +66,10 @@ namespace Code.Scripts
                     throw new ArgumentOutOfRangeException();
             }
         }
+
+        public Bounds GetBounds()
+        {
+            return boxCollider.bounds;
+        }
     }
 }
