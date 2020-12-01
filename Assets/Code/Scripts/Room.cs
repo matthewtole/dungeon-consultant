@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using EasyButtons;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -19,8 +20,15 @@ namespace Code.Scripts
         [SerializeField] protected TileBase warningTape;
         [SerializeField] protected BoxCollider2D boxCollider;
 
-        private List<Vector3Int> _wallsToDecorate;
+        private List<Vector3Int> _wallsToDecorate = new List<Vector3Int>();
         void Start()
+        {
+            
+            CalculateWallsToDecorate();
+            UpdateWarningTape();
+        }
+
+        private void CalculateWallsToDecorate()
         {
             _wallsToDecorate = new List<Vector3Int>();
             
@@ -29,17 +37,12 @@ namespace Code.Scripts
                 for (float x = boxCollider.bounds.min.x; x < boxCollider.bounds.max.x; x += 1)
                 {
                     Vector3Int pos = Vector3Int.FloorToInt(new Vector3(x, y, 0));
-                    //TileBase t = ;
                     if (tilemapWalls.GetTile(pos) && !tilemapWalls.GetTile(pos + Vector3Int.down))
                     {
-                        //
-                        //Debug.Log("Found a wall", t);
                         _wallsToDecorate.Add(pos);
                     }
                 }
             }
-
-            UpdateWarningTape();
         }
         
         private void UpdateWarningTape()
@@ -61,7 +64,6 @@ namespace Code.Scripts
                     return true;
                 case RoomType.Training:
                     return transform.GetComponentsInChildren<TrainingTarget>().Length > 0;
-                    break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
@@ -70,6 +72,19 @@ namespace Code.Scripts
         public Bounds GetBounds()
         {
             return boxCollider.bounds;
+        }
+
+        [Button]
+        public void CheckRequirements()
+        {
+            CalculateWallsToDecorate();
+            UpdateWarningTape();
+        }
+
+        [Button]
+        public void ClearTape()
+        {
+            _wallsToDecorate.ForEach(pos => tilemapWallDecorations.SetTile(pos, null));
         }
     }
 }

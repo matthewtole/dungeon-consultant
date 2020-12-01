@@ -24,20 +24,49 @@ MonoBehaviour:
     m_Scopes: []
     m_IsDefault: 1
     m_Capabilities: 7
+  - m_Id: scoped:NPM Registry
+    m_Name: NPM Registry
+    m_Url: https://registry.npmjs.org
+    m_Scopes:
+    - com.mambojambostudios.unity-atoms-core
+    - com.mambojambostudios.unity-atoms-base-atoms
+    - com.mambojambostudios.unity-atoms-fsm
+    - com.mambojambostudios.unity-atoms-mobile
+    - com.mambojambostudios.unity-atoms-mono-hooks
+    - com.mambojambostudios.unity-atoms-tags
+    - com.mambojambostudios.unity-atoms-scene-mgmt
+    - com.mambojambostudios.unity-atoms-ui
+    m_IsDefault: 0
+    m_Capabilities: 0
   m_UserSelectedRegistryName: 
   m_UserAddingNewScopedRegistry: 0
   m_RegistryInfoDraft:
     m_ErrorMessage: 
     m_Original:
-      m_Id: 
-      m_Name: 
-      m_Url: 
-      m_Scopes: []
+      m_Id: scoped:NPM Registry
+      m_Name: NPM Registry
+      m_Url: https://registry.npmjs.org
+      m_Scopes:
+      - com.mambojambostudios.unity-atoms-core
+      - com.mambojambostudios.unity-atoms-base-atoms
+      - com.mambojambostudios.unity-atoms-fsm
+      - com.mambojambostudios.unity-atoms-mobile
+      - com.mambojambostudios.unity-atoms-mono-hooks
+      - com.mambojambostudios.unity-atoms-tags
+      - com.mambojambostudios.unity-atoms-scene-mgmt
+      - com.mambojambostudios.unity-atoms-ui
       m_IsDefault: 0
       m_Capabilities: 0
     m_Modified: 0
-    m_Name: 
-    m_Url: 
+    m_Name: NPM Registry
+    m_Url: https://registry.npmjs.org
     m_Scopes:
-    - 
+    - com.mambojambostudios.unity-atoms-core
+    - com.mambojambostudios.unity-atoms-base-atoms
+    - com.mambojambostudios.unity-atoms-fsm
+    - com.mambojambostudios.unity-atoms-mobile
+    - com.mambojambostudios.unity-atoms-mono-hooks
+    - com.mambojambostudios.unity-atoms-tags
+    - com.mambojambostudios.unity-atoms-scene-mgmt
+    - com.mambojambostudios.unity-atoms-ui
     m_SelectedScopeIndex: 0

@@ -1,5 +1,87 @@
 {
   "dependencies": {
+    "com.madsbangh.easybuttons": {
+      "version": "https://github.com/madsbangh/EasyButtons.git#upm",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "7047cf063c0dbc92b73a3d5e319ab25db877b01e"
+    },
+    "com.mambojambostudios.unity-atoms-base-atoms": {
+      "version": "4.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.mambojambostudios.unity-atoms-core": "4.3.0"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.mambojambostudios.unity-atoms-core": {
+      "version": "4.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.org"
+    },
+    "com.mambojambostudios.unity-atoms-fsm": {
+      "version": "4.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.mambojambostudios.unity-atoms-core": "4.3.0",
+        "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.mambojambostudios.unity-atoms-mobile": {
+      "version": "4.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.mambojambostudios.unity-atoms-core": "4.3.0"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.mambojambostudios.unity-atoms-mono-hooks": {
+      "version": "4.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.mambojambostudios.unity-atoms-core": "4.3.0",
+        "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.mambojambostudios.unity-atoms-scene-mgmt": {
+      "version": "4.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.mambojambostudios.unity-atoms-core": "4.3.0",
+        "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.mambojambostudios.unity-atoms-tags": {
+      "version": "4.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.mambojambostudios.unity-atoms-core": "4.3.0",
+        "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.mambojambostudios.unity-atoms-ui": {
+      "version": "4.3.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.mambojambostudios.unity-atoms-core": "4.3.0",
+        "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0"
+      },
+      "url": "https://registry.npmjs.org"
+    },
     "com.unity.2d.animation": {
       "version": "4.2.6",
       "depth": 0,
