@@ -11,7 +11,7 @@ You must balance the needs of your minions with the desires of the townfolk to k
 
 ## Status
 
-This game is very much a work in progress. I am still learning Unity as well as general game design and pixel art. I hope to have a playable demo ready by the end of 2020.
+This game is very much a work in progress. I am still learning Unity as well as general game design and pixel art. I hope to have a playable demo ready by the end of ~2020~2021.
 
 ## Designs
 
