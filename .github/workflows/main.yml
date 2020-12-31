@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: webbertakken/unity-builder@<version>
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          #projectPath: path/to/your/project
+          unityVersion: 2020.1.11f1
+          targetPlatform: WebGL
+      - uses: actions/upload-artifact@v1
+        with:
+          name: Build
+          path: build
