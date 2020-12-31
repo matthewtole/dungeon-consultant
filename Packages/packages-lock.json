@@ -1,169 +1,5 @@
 {
   "dependencies": {
-    "com.madsbangh.easybuttons": {
-      "version": "https://github.com/madsbangh/EasyButtons.git#upm",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "7047cf063c0dbc92b73a3d5e319ab25db877b01e"
-    },
-    "com.mambojambostudios.unity-atoms-base-atoms": {
-      "version": "4.3.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.mambojambostudios.unity-atoms-core": "4.3.0"
-      },
-      "url": "https://registry.npmjs.org"
-    },
-    "com.mambojambostudios.unity-atoms-core": {
-      "version": "4.3.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://registry.npmjs.org"
-    },
-    "com.mambojambostudios.unity-atoms-fsm": {
-      "version": "4.3.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.mambojambostudios.unity-atoms-core": "4.3.0",
-        "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0"
-      },
-      "url": "https://registry.npmjs.org"
-    },
-    "com.mambojambostudios.unity-atoms-mobile": {
-      "version": "4.3.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.mambojambostudios.unity-atoms-core": "4.3.0"
-      },
-      "url": "https://registry.npmjs.org"
-    },
-    "com.mambojambostudios.unity-atoms-mono-hooks": {
-      "version": "4.3.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.mambojambostudios.unity-atoms-core": "4.3.0",
-        "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0"
-      },
-      "url": "https://registry.npmjs.org"
-    },
-    "com.mambojambostudios.unity-atoms-scene-mgmt": {
-      "version": "4.3.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.mambojambostudios.unity-atoms-core": "4.3.0",
-        "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0"
-      },
-      "url": "https://registry.npmjs.org"
-    },
-    "com.mambojambostudios.unity-atoms-tags": {
-      "version": "4.3.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.mambojambostudios.unity-atoms-core": "4.3.0",
-        "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0"
-      },
-      "url": "https://registry.npmjs.org"
-    },
-    "com.mambojambostudios.unity-atoms-ui": {
-      "version": "4.3.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.mambojambostudios.unity-atoms-core": "4.3.0",
-        "com.mambojambostudios.unity-atoms-base-atoms": "4.3.0"
-      },
-      "url": "https://registry.npmjs.org"
-    },
-    "com.unity.2d.animation": {
-      "version": "4.2.6",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.2d.common": "3.0.1",
-        "com.unity.mathematics": "1.1.0",
-        "com.unity.2d.sprite": "1.0.0",
-        "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.uielements": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.common": {
-      "version": "3.0.1",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.2d.sprite": "1.0.0",
-        "com.unity.modules.uielements": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.path": {
-      "version": "3.0.2",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.pixel-perfect": {
-      "version": "3.0.2",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.psdimporter": {
-      "version": "3.1.6",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.2d.common": "3.0.1",
-        "com.unity.2d.animation": "4.2.6",
-        "com.unity.2d.sprite": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.sprite": {
-      "version": "1.0.0",
-      "depth": 0,
-      "source": "builtin",
-      "dependencies": {}
-    },
-    "com.unity.2d.spriteshape": {
-      "version": "4.1.4",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.mathematics": "1.1.0",
-        "com.unity.2d.common": "3.0.1",
-        "com.unity.2d.path": "3.0.2",
-        "com.unity.modules.physics2d": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.tilemap": {
-      "version": "1.0.0",
-      "depth": 0,
-      "source": "builtin",
-      "dependencies": {}
-    },
-    "com.unity.2d.tilemap.extras": {
-      "version": "https://github.com/Unity-Technologies/2d-extras.git#master",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.modules.tilemap": "1.0.0",
-        "com.unity.2d.tilemap": "1.0.0"
-      },
-      "hash": "18cae2921070fc149efc3e9a0b410df35309db73"
-    },
     "com.unity.collab-proxy": {
       "version": "1.3.9",
       "depth": 0,
@@ -172,14 +8,14 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
-      "version": "1.0.0",
+      "version": "1.0.5",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "1.2.1",
+      "version": "2.0.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -188,7 +24,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.3",
+      "version": "2.0.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -209,7 +45,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
-      "version": "8.2.0",
+      "version": "10.2.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -218,38 +54,39 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.universal": {
-      "version": "8.2.0",
+      "version": "10.2.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.render-pipelines.core": "8.2.0",
-        "com.unity.shadergraph": "8.2.0"
+        "com.unity.mathematics": "1.1.0",
+        "com.unity.render-pipelines.core": "10.2.2",
+        "com.unity.shadergraph": "10.2.2"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.searcher": {
-      "version": "4.0.9",
+      "version": "4.3.1",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.shadergraph": {
-      "version": "8.2.0",
+      "version": "10.2.2",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.render-pipelines.core": "8.2.0",
-        "com.unity.searcher": "4.0.9"
+        "com.unity.render-pipelines.core": "10.2.2",
+        "com.unity.searcher": "4.3.1"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
-      "version": "1.1.18",
+      "version": "1.1.19",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.ext.nunit": "1.0.0",
+        "com.unity.ext.nunit": "1.0.5",
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
@@ -265,10 +102,15 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.2.15",
+      "version": "1.4.4",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.modules.director": "1.0.0",
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.particlesystem": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.ugui": {
