@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: webbertakken/unity-builder@<version>
+      - uses: webbertakken/unity-builder@ 2020.1.11f1
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
