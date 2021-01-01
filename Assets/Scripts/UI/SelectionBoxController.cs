@@ -16,7 +16,7 @@ namespace UI
         
 
         [ButtonMethod()]
-        protected void UpdateGraphics()
+        private void UpdateGraphics()
         {
             topLeft.localPosition = new Vector3(width / -2, height/2);
             topRight.localPosition = new Vector3(width / 2, height/2);

@@ -1,38 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private Selectable _selectable;
+    private GameObject _selectable;
     private Camera _camera;
+    [SerializeField] protected GameObjectValueList selectableValueList;
 
     private void Awake()
     {
         _camera = Camera.main;
     }
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(_camera.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit && hit.transform && hit.transform.GetComponent<Selectable>())
             {
-                _selectable = hit.transform.GetComponent<Selectable>();
+                _selectable = hit.transform.gameObject;
             }
             else
             {
-                if (_selectable != null)
+                while (selectableValueList.Count > 0)
                 {
-                    _selectable.OnDeselect();
+                    selectableValueList.RemoveAt(0);
                 }
                 _selectable = null;
             }
@@ -40,7 +35,15 @@ public class PlayerInteraction : MonoBehaviour
 
         if (_selectable != null && Input.GetMouseButtonUp(0))
         {
-            _selectable.OnSelect();
+            if (!Input.GetKey(KeyCode.LeftShift))
+            {
+                while (selectableValueList.Count > 0)
+                {
+                    selectableValueList.RemoveAt(0);
+                }
+            }
+
+            selectableValueList.Add(_selectable);
         }
     }
 }

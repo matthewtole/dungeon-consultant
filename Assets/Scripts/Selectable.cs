@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using MyBox;
 using UI;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
 public class Selectable : MonoBehaviour
@@ -9,7 +10,7 @@ public class Selectable : MonoBehaviour
     [SerializeField] protected SelectionBoxController selectionBoxPrefab;
     [SerializeField] protected BoxCollider2D collider;
     private SelectionBoxController _selectionBox;
-    private bool _isSelected = false;
+    private bool _isSelected;
 
     [ButtonMethod()]
     public void OnSelect()
@@ -25,7 +26,7 @@ public class Selectable : MonoBehaviour
         _selectionBox.SetSize(collider.size);
         _selectionBox.transform.localPosition = collider.offset;
     }
-
+    
     [ButtonMethod()]
     public void OnDeselect()
     {
